@@ -9,6 +9,8 @@ class App extends React.Component {
       }
  
       this.setStateHandler = this.setStateHandler.bind(this);
+      //Trong ES6  khi bạn viết 1 function trong class, thì nó vẫn chưa được đinh nghĩa trong class, 
+      //bạn phải định nghĩa nó trong constructor:  this.setStateHandler = this.setStateHandler.bind(this);
    };
    setStateHandler() {
       var item = "setState..."
