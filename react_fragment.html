@@ -1,0 +1,41 @@
+<style type="text/css">
+#modal-container {
+  position: relative;
+  z-index: 999;
+}
+.app {
+  height: 10em;
+  width: 10em;
+  background: lightblue;
+  overflow: hidden;
+}
+.modal {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+<script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+<script src="https://unpkg.com/react/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+<div id="root"/>
+<script type="text/babel">
+  function Example() {
+    return (
+      <>
+        Some text.
+        <h2>A heading</h2>
+        More text.
+        <h2>Another heading</h2>
+        Even more text.
+      </>
+     );
+  }
+  ReactDOM.render(<Example />, document.getElementById('root'));
+</script>
